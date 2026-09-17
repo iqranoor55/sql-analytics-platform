@@ -8,24 +8,32 @@ on the Northwind business database.
 northwind_queries/
 ├── day1_basic_select.sql
 ├── day2_filter_sort.sql
+├── day3_aggregations.sql
 src/
 projects/
 
-
 ## Progress
 
-**Day 16 — Basic SELECT and Filtering**
+**Day 1 — Basic SELECT and Filtering**
 - Retrieved customer IDs and contact names from customers table
 - Selected all products and counted total product count
 - Filtered products with unit price above 20
 - Sorted products alphabetically ascending and descending
 - Retrieved top 10 products by unit price
 
-**Day 17 — WHERE Filtering and ORDER BY**
+**Day 2 — WHERE Filtering and ORDER BY**
 - Filtered orders by year using EXTRACT function
-- Searched products containing 'chef' using ILIKE 
+- Searched products containing 'chef' using ILIKE
   for case-insensitive matching
 - Sorted orders by freight cost descending
+
+**Day 3 — GROUP BY and Aggregations**
+- Counted orders per customer using COUNT with GROUP BY
+- Calculated total revenue per product category using SUM
+- Computed average order value across all orders
+- Found customers with more than 5 orders using HAVING
+- Identified categories with average price above 30
+- Ranked top 5 revenue generating products
 
 ## Database
 PostgreSQL — Northwind sample business database
@@ -34,6 +42,7 @@ PostgreSQL — Northwind sample business database
 PostgreSQL • SQL • Docker
 
 ## Key Insight
-ILIKE performs case-insensitive pattern matching 
-in PostgreSQL. Unlike LIKE, it matches regardless 
-of uppercase or lowercase letters.
+HAVING filters groups after aggregation while WHERE 
+filters rows before grouping. Using WHERE instead of 
+HAVING on aggregated results is one of the most common 
+SQL mistakes beginners make.
