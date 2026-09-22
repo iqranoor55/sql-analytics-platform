@@ -35,6 +35,14 @@ projects/
 - Identified categories with average price above 30
 - Ranked top 5 revenue generating products
 
+**Day 4 — JOINS — Combining Tables**
+- Retrieved products with their category names using INNER JOIN
+- Retrieved orders with customer names across two tables
+- Found products never ordered using LEFT JOIN with IS NULL
+- Built a self JOIN to show employees with their managers
+- Combined 4 tables in one query: orders, customers, 
+  products, and order details
+
 ## Database
 PostgreSQL — Northwind sample business database
 
