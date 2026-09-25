@@ -43,6 +43,16 @@ projects/
 - Combined 4 tables in one query: orders, customers, 
   products, and order details
 
+  **Day 5 — Subqueries**
+- Found products more expensive than the average price
+  using a scalar subquery
+- Found customers who ordered a specific product
+  using a nested subquery with IN
+- Found the most expensive product in each category
+  using a correlated subquery
+- Found customers who never placed an order
+  using NOT IN with a subquery
+
 ## Database
 PostgreSQL — Northwind sample business database
 
