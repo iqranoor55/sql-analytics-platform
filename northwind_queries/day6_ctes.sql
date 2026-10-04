@@ -1,3 +1,4 @@
+
 --  products more expensive than average
 WITH my_cte AS (
     SELECT category_id,AVG(unit_price) AS average_price
