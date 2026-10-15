@@ -9,6 +9,10 @@ northwind_queries/
 ├── day1_basic_select.sql
 ├── day2_filter_sort.sql
 ├── day3_aggregations.sql
+├── day4_joins.sql
+├── day5_subqueries.sql
+├── day6_ctes.sql
+├── day7_window_functions.sql
 src/
 projects/
 
@@ -40,10 +44,10 @@ projects/
 - Retrieved orders with customer names across two tables
 - Found products never ordered using LEFT JOIN with IS NULL
 - Built a self JOIN to show employees with their managers
-- Combined 4 tables in one query: orders, customers, 
+- Combined 4 tables in one query: orders, customers,
   products, and order details
 
-  **Day 5 — Subqueries**
+**Day 5 — Subqueries**
 - Found products more expensive than the average price
   using a scalar subquery
 - Found customers who ordered a specific product
@@ -53,6 +57,22 @@ projects/
 - Found customers who never placed an order
   using NOT IN with a subquery
 
+**Day 6 — CTEs (Common Table Expressions)**
+- Found products more expensive than category average
+  using a CTE joined back to products table
+- Found customers who never placed an order
+  using a CTE with NOT IN pattern
+- Built monthly revenue trend using CTE with
+  discount-adjusted revenue calculation
+
+**Day 7 — Window Functions**
+- Ranked products by sales within each category
+  using RANK() with PARTITION BY
+- Built running monthly revenue total using
+  SUM() OVER with UNBOUNDED PRECEDING
+- Found top 3 customers per country using
+  DENSE_RANK() with two-step CTE approach
+
 ## Database
 PostgreSQL — Northwind sample business database
 
@@ -60,7 +80,7 @@ PostgreSQL — Northwind sample business database
 PostgreSQL • SQL • Docker
 
 ## Key Insight
-HAVING filters groups after aggregation while WHERE 
-filters rows before grouping. Using WHERE instead of 
-HAVING on aggregated results is one of the most common 
+HAVING filters groups after aggregation while WHERE
+filters rows before grouping. Using WHERE instead of
+HAVING on aggregated results is one of the most common
 SQL mistakes beginners make.
